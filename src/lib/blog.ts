@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 
 // Posts directory at root level
 const postsDirectory = path.join(process.cwd(), 'posts');
@@ -22,10 +23,13 @@ export interface Post extends PostMeta {
 }
 
 /**
- * Parse markdown content to HTML
+ * Parse markdown content to HTML with GFM support (tables, strikethrough, etc.)
  */
 async function parseMarkdown(content: string): Promise<string> {
-  const result = await remark().use(html).process(content);
+  const result = await remark()
+    .use(remarkGfm) // Enable GitHub Flavored Markdown (tables, strikethrough, etc.)
+    .use(html, { sanitize: false }) // Allow raw HTML and proper table rendering
+    .process(content);
   return result.toString();
 }
 
