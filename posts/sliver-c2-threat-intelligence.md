@@ -1,9 +1,9 @@
 ---
-title: "Sliver RAT — Comprehensive Cyber Threat Intelligence Brief"
+title: "Sliver C2 — Comprehensive Cyber Threat Intelligence Brief"
 date: "2026-01-03"
 author: "0xadroit"
 summary: "A comprehensive threat intelligence analysis of Sliver C2 framework, including MITRE ATT&CK mapping, indicators of compromise, detection rules, and defensive recommendations for security teams."
-tags: ["Sliver", "RAT", "C2", "Red Team", "Threat Intelligence", "MITRE ATT&CK"]
+tags: ["Sliver", "C2", "Red Team", "Threat Intelligence", "MITRE ATT&CK"]
 ---
 
 ## Overview
