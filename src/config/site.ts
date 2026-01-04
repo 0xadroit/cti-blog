@@ -1,18 +1,18 @@
 import { SiteConfig, Category } from '@/types/blog';
 
 export const siteConfig: SiteConfig = {
-  name: '0xadroit',
+  name: 'w3bdemo',
   description: 'Cybersecurity Threat Intelligence - Malware Analysis, APT Research, and Security Insights',
-  url: 'https://wkexl5fef.localto.net',
+  url: 'http://localhost:3000',
   author: {
-    name: '0xadroit',
+    name: 'w3bdemo',
     avatar: '/images/author/avatar.png',
     bio: 'Cybersecurity researcher focused on threat intelligence, malware analysis, and adversary tracking. Sharing insights to help defenders stay ahead of threats.',
     role: 'Threat Intelligence Researcher',
     social: {
-      twitter: 'https://twitter.com/0xadroit',
-      github: 'https://github.com/0xadroit',
-      linkedin: 'https://linkedin.com/in/0xadroit',
+      twitter: 'https://twitter.com/w3bdemo',
+      github: 'https://github.com/w3bdemo',
+      linkedin: 'https://linkedin.com/in/w3bdemo',
     },
   },
   postsPerPage: 9,
